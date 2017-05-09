@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ChatRoom</title>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="mdl-card mdl-shadow--2dp mdl-layout--fixed-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+          <h2 class="mdl-card__title-text" id="menu_title"></h2>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><a>Menu</a></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="./chatroom.html">ChatRoom</a>
+          <a class="mdl-navigation__link" href="./profile.html">My Profile</a>
+          <a class="mdl-navigation__link" href="./updateImfo.html">UpdateInfo</a>
+          <a class="mdl-navigation__link" href="./index.html" id="menu-logout">LogOut</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-card__supporting-text">
+        <div class="page-content">
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="userName" >
+              <label class="mdl-textfield__label" for="sample1">Username</label>
+              <span class="mdl-textfield__error" id="test">*Please input your name</span>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="occupation">
+              <label class="mdl-textfield__label" for="sample1">Occupation</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield" id="photo">
+              <h6>Your photo: </h6>
+              <input type="file" id="file" name="file"/>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="age">
+              <label class="mdl-textfield__label" for="sample1">Age</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="decription">
+              <label class="mdl-textfield__label" for="sample1">Decription</label>
+            </div>
+          </form>
+          <!-- Your content goes here -->
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--accent" id="btnSubmit">Submit</button>
+      </main>
+      <!-- Accent-colored flat button -->
+
+    </div>
+    <!-- draw layout div -->
+  </div>
+  <!-- card div -->
+
+</body>
+
+</html>
