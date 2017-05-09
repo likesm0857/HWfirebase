@@ -20,7 +20,7 @@ $(document).ready(function(){
        const $messageList = $('#example-messages');
       const $btnProfile= $('#btnProfile');
       var dbChatRoom = firebase.database().ref().child('chatroom');
-       var photoURL = "./image/default.jpg";
+       var photoURL = "  ";
 const $signInfo = $('#sign-info');
 var dbUser = firebase.database().ref().child('User');
       $btnSignIn.click(function(e) {
